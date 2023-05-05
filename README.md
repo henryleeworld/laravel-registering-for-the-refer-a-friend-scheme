@@ -1,4 +1,4 @@
-# Laravel 8 透過朋友推薦計劃註冊
+# Laravel 10 透過朋友推薦計劃註冊
 
 引入 questocat 的 laravel-referral 套件來透過朋友推薦計劃註冊，朋友成功通過推薦朋友計劃註冊成為會員，哈佛商業評論指出，被推薦者相對來說忠誠度高出 18 %，消費者生命週期高出 16 %，花費金額多出 13.2 %。
 
@@ -20,9 +20,13 @@ $ php artisan key:generate
 ```sh
 $ php artisan migrate
 ```
-- 執行安裝 Laravel Mix 引用的依賴項目，並執行所有 Mix 任務。
+- 執行安裝 Vite 和 Laravel 擴充套件引用的依賴項目。
 ```sh
-$ npm install && npm run dev
+$ npm install
+```
+- 執行正式環境版本化資源管道並編譯。
+```sh
+$ npm run build
 ```
 - 在瀏覽器中輸入已定義的路由 URL 來訪問，例如：http://127.0.0.1:8000。
 - 你可以經由 `/register` 來進行註冊。
@@ -31,8 +35,11 @@ $ npm install && npm run dev
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/nkYDtg3.png)
-> 建立新的帳號
+![](https://i.imgur.com/84IKfgJ.png)
+> 取得推薦專屬註冊網址
 
-![](https://i.imgur.com/CGsSJFu.png)
-> 使用現有的帳號登入後，進入預設歡迎頁面
+![](https://i.imgur.com/n859SXU.png)
+> 被推薦人使用推薦註冊網址
+
+![](https://i.imgur.com/JCj5Kw5.png)
+> 可以判定該被推薦人註冊來自哪位推薦人
