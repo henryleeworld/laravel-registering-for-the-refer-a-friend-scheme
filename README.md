@@ -35,11 +35,11 @@ $ npm run build
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/84IKfgJ.png)
+![](https://i.imgur.com/p0sCNbk.png)
 > 取得推薦專屬註冊網址
 
-![](https://i.imgur.com/n859SXU.png)
+![](https://i.imgur.com/VbyS6sk.png)
 > 被推薦人使用推薦註冊網址
 
-![](https://i.imgur.com/JCj5Kw5.png)
+![](https://i.imgur.com/I8zuzzZ.png)
 > 可以判定該被推薦人註冊來自哪位推薦人

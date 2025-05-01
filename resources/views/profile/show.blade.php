@@ -39,22 +39,12 @@
                 <div class="mt-10 sm:mt-0">
                     @livewire('profile.delete-user-form')
                 </div>
-                <x-section-border />
             @endif
 
+            <x-section-border />
+
             <div class="mt-10 sm:mt-0">
-                <x-action-section>
-                    <x-slot name="title">
-                        {{ __('Referral Link') }}
-                    </x-slot>
-                    <x-slot name="description">
-                    </x-slot>
-                    <x-slot name="content">
-                        <div class="max-w-xl text-sm text-gray-600">
-                            {{ route('register', ['ref' => auth()->user()->affiliate_id]) }}
-                        </div>
-                    </x-slot>
-                </x-action-section>
+                @include('profile.referral-link-division')
             </div>
         </div>
     </div>
